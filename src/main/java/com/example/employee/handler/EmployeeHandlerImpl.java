@@ -37,8 +37,8 @@ public class EmployeeHandlerImpl implements EmployeeHandler {
 
 	@Override
 	public int updateEmployee(Employee emp) {
-		Employee employee = employeeDao.addOrUpdate(emp);
-		return employee.getId();
+		employeeDao.addOrUpdate(emp);
+		return emp.getId();
 	}
 
 	@Override
